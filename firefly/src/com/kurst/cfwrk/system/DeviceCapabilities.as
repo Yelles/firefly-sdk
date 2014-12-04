@@ -591,7 +591,7 @@ import flash.system.Capabilities;
 					result.model		= hwModel;
 					result.scale 		= 2;
 					result.os			= OSList.IOS;
-					result.supported	= true; 
+					result.supported	= false;
 					
 				} else if ( hwModel.indexOf( "iPod5" ) != -1 ) {// NEEDS TESTING
 	
