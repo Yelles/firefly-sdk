@@ -42,6 +42,7 @@
 package com.kurst.cfwrk.system {
 import com.kurst.cfwrk.system.constants.DeviceList;
 import com.kurst.cfwrk.system.constants.DeviceOrientation;
+import com.kurst.cfwrk.system.constants.MobileDeviceName;
 import com.kurst.cfwrk.system.constants.OSList;
 import com.kurst.cfwrk.system.data.DeviceInfo;
 
@@ -344,6 +345,7 @@ import flash.system.Capabilities;
 					result.width 		= 480;
 					result.height 		= 320;
 					result.device 		= DeviceList.IPHONE_1;
+					result.name 		= MobileDeviceName.IPHONE_1;
 					result.model		= hwModel;
 					result.scale 		= 1;
 					result.os			= OSList.IOS;
@@ -354,6 +356,7 @@ import flash.system.Capabilities;
 					result.width 		= 480;
 					result.height 		= 320;
 					result.device 		= DeviceList.IPHONE_3G;
+					result.name 		= MobileDeviceName.IPHONE_3G;
 					result.model		= hwModel;
 					result.scale 		= 1;
 					result.os			= OSList.IOS;
@@ -364,16 +367,18 @@ import flash.system.Capabilities;
 					result.width 		= 480;
 					result.height 		= 320;
 					result.device 		= DeviceList.IPHONE_3GS;
+					result.name 		= MobileDeviceName.IPHONE_3GS;
 					result.model		= hwModel;
 					result.scale 		= 1;
 					result.os			= OSList.IOS;
 					result.supported	= true;
 					
-				} else if ( hwModel.indexOf( "iPhone3,1" ) != -1 ) {// NEEDS TESTING
+				} else if ( hwModel.indexOf( "iPhone3" ) != -1 ) {// NEEDS TESTING
 					
 					result.width 		= 960;
 					result.height 		= 640;
 					result.device 		= DeviceList.IPHONE_4;
+					result.name 		= MobileDeviceName.IPHONE_4;
 					result.model		= hwModel;
 					result.scale 		= 2;
 					result.os			= OSList.IOS;
@@ -384,26 +389,29 @@ import flash.system.Capabilities;
 					result.width 		= 960;
 					result.height 		= 640;
 					result.device 		= DeviceList.IPHONE_4S;
+					result.name 		= MobileDeviceName.IPHONE_4S;
 					result.model		= hwModel;
 					result.scale 		= 2;
 					result.os			= OSList.IOS;
 					result.supported	= true;
 				
-				} else if ( hwModel.indexOf( "iPad1" ) != -1 ) { 
+				} else if ( hwModel.indexOf( "iPad1,1" ) != -1 ) {
 					
 					result.width 		= 1024;
 					result.height 		= 768;
 					result.device 		= DeviceList.IPAD_1;
+					result.name 		= MobileDeviceName.IPAD_1;
 					result.model		= hwModel;
 					result.scale 		= 1;
 					result.os			= OSList.IOS;
 					result.supported	= true;
 					
-				} else if ( hwModel.indexOf( "iPad2,5" ) != -1 ) {// NEEDS TESTING
+				} else if ( hwModel.indexOf( "iPad2,5" ) != -1 || hwModel.indexOf( "iPad2,6" ) != -1 || hwModel.indexOf( "iPad2,7" ) != -1 ) {// NEEDS TESTING
 					
 					result.width 		= 1024;
 					result.height 		= 768;
 					result.device 		= DeviceList.IPAD_MINI;
+					result.name 		= MobileDeviceName.IPAD_MINI;
 					result.model		= hwModel;
 					result.scale 		= 1;
 					result.os			= OSList.IOS;
@@ -414,26 +422,62 @@ import flash.system.Capabilities;
 					result.width 		= 1024;
 					result.height 		= 768;
 					result.device 		= DeviceList.IPAD_2;
+					result.name 		= MobileDeviceName.IPAD_2;
 					result.model		= hwModel;
 					result.scale 		= 1;
 					result.os			= OSList.IOS;
 					result.supported	= true;
 					
-				} else if ( hwModel.indexOf( "iPad3" ) != -1 ) { // NEEDS TESTING
+				} else if ( hwModel.indexOf( "iPad3,1" ) != -1 || hwModel.indexOf( "iPad3,2" ) != -1  || hwModel.indexOf( "iPad3,3" ) != -1 ) { // NEEDS TESTING
 
 					result.width 		= 2048;
 					result.height 		= 1536;
 					result.device 		= DeviceList.IPAD_3;
+					result.name 		= MobileDeviceName.IPAD_3;
 					result.model		= hwModel;
 					result.scale 		= 2;
 					result.os			= OSList.IOS;
 					result.supported	= true;
 
-				} else if ( hwModel.indexOf( "iPad4" ) != -1 ) { // NEEDS TESTING
+				} else if ( hwModel.indexOf( "iPad3,4" ) != -1 || hwModel.indexOf( "iPad3,5" ) != -1  || hwModel.indexOf( "iPad3,6" ) != -1 ) { // NEEDS TESTING
 
 					result.width 		= 2048;
 					result.height 		= 1536;
 					result.device 		= DeviceList.IPAD_4;
+					result.name 		= MobileDeviceName.IPAD_4;
+					result.model		= hwModel;
+					result.scale 		= 2;
+					result.os			= OSList.IOS;
+					result.supported	= true;
+
+				} else if ( hwModel.indexOf( "iPad4,1" ) != -1 || hwModel.indexOf( "iPad4,2" ) != -1  || hwModel.indexOf( "iPad4,3" ) != -1 ) { // NEEDS TESTING
+
+					result.width 		= 2048;
+					result.height 		= 1536;
+					result.device 		= DeviceList.IPAD_AIR;
+					result.name 		= MobileDeviceName.IPAD_AIR;
+					result.model		= hwModel;
+					result.scale 		= 2;
+					result.os			= OSList.IOS;
+					result.supported	= true;
+
+				} else if ( hwModel.indexOf( "iPad4,4" ) != -1 || hwModel.indexOf( "iPad4,5" ) != -1  || hwModel.indexOf( "iPad4,6" ) != -1 ) { // NEEDS TESTING
+
+					result.width 		= 2048;
+					result.height 		= 1536;
+					result.device 		= DeviceList.IPAD_MINI_2;
+					result.name 		= MobileDeviceName.IPAD_MINI_2;
+					result.model		= hwModel;
+					result.scale 		= 2;
+					result.os			= OSList.IOS;
+					result.supported	= true;
+
+				} else if ( hwModel.indexOf( "iPad4,7" ) != -1 || hwModel.indexOf( "iPad4,8" ) != -1  || hwModel.indexOf( "iPad4,9" ) != -1 ) { // NEEDS TESTING
+
+					result.width 		= 2048;
+					result.height 		= 1536;
+					result.device 		= DeviceList.IPAD_MINI_3;
+					result.name 		= MobileDeviceName.IPAD_MINI_3;
 					result.model		= hwModel;
 					result.scale 		= 2;
 					result.os			= OSList.IOS;
@@ -443,27 +487,41 @@ import flash.system.Capabilities;
 
 					result.width 		= 2048;
 					result.height 		= 1536;
-					result.device 		= DeviceList.IPAD_5;
+					result.device 		= DeviceList.IPAD_AIR2;
+					result.name 		= MobileDeviceName.IPAD_AIR2;
 					result.model		= hwModel;
 					result.scale 		= 2;
 					result.os			= OSList.IOS;
 					result.supported	= true;
 
-				} else if ( hwModel.indexOf( "iPhone5" ) != -1 ) {// NEEDS TESTING
+				} else if ( hwModel.indexOf( "iPhone5,1" ) != -1 || hwModel.indexOf( "iPhone5,2" ) != -1 ) {// NEEDS TESTING
 	
 					result.width 		= 1136;
 					result.height 		= 640;
 					result.device 		= DeviceList.IPHONE_5;
+					result.name 		= MobileDeviceName.IPHONE_5;
 					result.model		= hwModel;
 					result.scale 		= 2;
 					result.os			= OSList.IOS;
 					result.supported	= true; 
 					
+				} else if ( hwModel.indexOf( "iPhone5,3" ) != -1 || hwModel.indexOf( "iPhone5,4" ) != -1 ) {// NEEDS TESTING
+
+					result.width 		= 1136;
+					result.height 		= 640;
+					result.device 		= DeviceList.IPHONE_5C;
+					result.name 		= MobileDeviceName.IPHONE_5C;
+					result.model		= hwModel;
+					result.scale 		= 2;
+					result.os			= OSList.IOS;
+					result.supported	= true;
+
 				} else if ( hwModel.indexOf( "iPhone6" ) != -1 ) {// NEEDS TESTING
 
 					result.width 		= 1136;
 					result.height 		= 640;
 					result.device 		= DeviceList.IPHONE_5S;
+					result.name 		= MobileDeviceName.IPHONE_5S;
 					result.model		= hwModel;
 					result.scale 		= 2;
 					result.os			= OSList.IOS;
@@ -474,6 +532,7 @@ import flash.system.Capabilities;
 					result.width 		= 1334;
 					result.height 		= 750;
 					result.device 		= DeviceList.IPHONE_6;
+					result.name 		= MobileDeviceName.IPHONE_6;
 					result.model		= hwModel;
 					result.scale 		= 2;
 					result.os			= OSList.IOS;
@@ -484,6 +543,7 @@ import flash.system.Capabilities;
 					result.width 		= 2208;
 					result.height 		= 1242;
 					result.device 		= DeviceList.IPHONE_6PLUS;
+					result.name 		= MobileDeviceName.IPHONE_6PLUS;
 					result.model		= hwModel;
 					result.scale 		= 2;
 					result.os			= OSList.IOS;
@@ -494,6 +554,7 @@ import flash.system.Capabilities;
 					result.width 		= 480;
 					result.height 		= 320;
 					result.device 		= DeviceList.IPOD_TOUCH_1;
+					result.name 		= MobileDeviceName.IPOD_TOUCH_1;
 					result.model		= hwModel;
 					result.scale 		= 1;
 					result.os			= OSList.IOS;
@@ -504,6 +565,7 @@ import flash.system.Capabilities;
 					result.width 		= 480;
 					result.height 		= 320;
 					result.device 		= DeviceList.IPOD_TOUCH_2;
+					result.name 		= MobileDeviceName.IPOD_TOUCH_2;
 					result.model		= hwModel;
 					result.scale 		= 1;
 					result.os			= OSList.IOS;
@@ -514,6 +576,7 @@ import flash.system.Capabilities;
 					result.width 		= 480;
 					result.height 		= 320;
 					result.device 		= DeviceList.IPOD_TOUCH_3;
+					result.name 		= MobileDeviceName.IPOD_TOUCH_3;
 					result.model		= hwModel;
 					result.scale 		= 1;
 					result.os			= OSList.IOS;
@@ -524,6 +587,7 @@ import flash.system.Capabilities;
 					result.width 		= 1136;
 					result.height 		= 640;
 					result.device 		= DeviceList.IPOD_TOUCH_4;
+					result.name 		= MobileDeviceName.IPOD_TOUCH_4;
 					result.model		= hwModel;
 					result.scale 		= 2;
 					result.os			= OSList.IOS;
@@ -534,6 +598,7 @@ import flash.system.Capabilities;
 					result.width 		= 1136;
 					result.height 		= 640;
 					result.device 		= DeviceList.IPOD_TOUCH_5;
+					result.name 		= MobileDeviceName.IPOD_TOUCH_5;
 					result.model		= hwModel;
 					result.scale 		= 2;
 					result.os			= OSList.IOS;

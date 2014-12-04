@@ -10,6 +10,10 @@ package com.kurst.cfwrk.system.data {
 		/*
 		 * Detected Operating system - Constant from OSList
 		 */
+		public var name 		: String; //
+		/*
+		 * Detected Device name - Constant from OSList
+		 */
 		public var model 		: String; //
 		/*
 		 * Detected hardware model
@@ -34,6 +38,7 @@ package com.kurst.cfwrk.system.data {
 			var result : String = '';
 			
 				result += "Device: " 	+ device + ' ';
+				result += "DeviceName: "+ name + ' ';
 				result += "Model: " 	+ model + ' ';
 				result += "Supported: " + supported + ' ';
 				result += "Platform: " 	+ os + ' ';
