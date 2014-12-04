@@ -371,7 +371,7 @@ import flash.system.Capabilities;
 					result.model		= hwModel;
 					result.scale 		= 1;
 					result.os			= OSList.IOS;
-					result.supported	= true;
+					result.supported	= false;
 					
 				} else if ( hwModel.indexOf( "iPhone3" ) != -1 ) {// NEEDS TESTING
 					
@@ -382,7 +382,7 @@ import flash.system.Capabilities;
 					result.model		= hwModel;
 					result.scale 		= 2;
 					result.os			= OSList.IOS;
-					result.supported	= true;
+					result.supported	= false;
 					
 				} else if ( hwModel.indexOf( "iPhone4,1" ) != -1 ) {// NEEDS TESTING
 					
@@ -404,7 +404,7 @@ import flash.system.Capabilities;
 					result.model		= hwModel;
 					result.scale 		= 1;
 					result.os			= OSList.IOS;
-					result.supported	= true;
+					result.supported	= false;
 					
 				} else if ( hwModel.indexOf( "iPad2,5" ) != -1 || hwModel.indexOf( "iPad2,6" ) != -1 || hwModel.indexOf( "iPad2,7" ) != -1 ) {// NEEDS TESTING
 					
@@ -415,7 +415,7 @@ import flash.system.Capabilities;
 					result.model		= hwModel;
 					result.scale 		= 1;
 					result.os			= OSList.IOS;
-					result.supported	= true;
+					result.supported	= false;
 					
 				} else if ( hwModel.indexOf( "iPad2" ) != -1 ) {// NEEDS TESTING
 					
@@ -426,7 +426,7 @@ import flash.system.Capabilities;
 					result.model		= hwModel;
 					result.scale 		= 1;
 					result.os			= OSList.IOS;
-					result.supported	= true;
+					result.supported	= false;
 					
 				} else if ( hwModel.indexOf( "iPad3,1" ) != -1 || hwModel.indexOf( "iPad3,2" ) != -1  || hwModel.indexOf( "iPad3,3" ) != -1 ) { // NEEDS TESTING
 
