@@ -488,7 +488,7 @@ import flash.system.Capabilities;
 					result.width 		= 2048;
 					result.height 		= 1536;
 					result.device 		= DeviceList.IPAD_AIR2;
-					result.name 		= MobileDeviceName.IPAD_AIR2;
+					result.name 		= MobileDeviceName.IPAD_AIR_2;
 					result.model		= hwModel;
 					result.scale 		= 2;
 					result.os			= OSList.IOS;
