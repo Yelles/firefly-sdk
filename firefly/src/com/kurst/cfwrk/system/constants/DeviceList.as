@@ -1,6 +1,6 @@
 package com.kurst.cfwrk.system.constants {
 	/**
-	 * @author karim
+	 * @reference https://theiphonewiki.com/wiki/Models
 	 */
 	public class DeviceList {
 		
