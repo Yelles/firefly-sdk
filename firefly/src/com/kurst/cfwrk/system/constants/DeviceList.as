@@ -32,7 +32,7 @@ package com.kurst.cfwrk.system.constants {
 		public static const IPAD_AIR		: String 	= 'iPad4';
 		public static const IPAD_MINI_2		: String 	= 'iPad4';
 		public static const IPAD_MINI_3		: String 	= 'iPad4';
-		public static const IPAD_AIR2		: String 	= 'iPad5';
+		public static const IPAD_AIR_2		: String 	= 'iPad5';
 		 
 		// Desktop 		
 		public static const DESKTOP			: String 	= 'desktop';
