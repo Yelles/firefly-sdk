@@ -36,9 +36,8 @@ package com.kurst.cfwrk.system.data {
 		public function toString() : String {
 			
 			var result : String = '';
-			
-				result += "Device: " 	+ device + ' ';
-				result += "DeviceName: "+ name + ' ';
+
+				result += "Device: "	+ name + ' ';
 				result += "Model: " 	+ model + ' ';
 				result += "Supported: " + supported + ' ';
 				result += "Platform: " 	+ os + ' ';
